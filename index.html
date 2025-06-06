@@ -82,9 +82,11 @@
 </head>
 <body>
 <div class="container">
-  <h1>Enter Your Roll Number</h1>
+  <h1><img src="logo.jpg" alt="Icon" style="height: 40px; vertical-align: middle;"> &nbsp;GCW KARNAL</h1><hr>
+  <h2 align=center>Know Your Subject-Section here</h2>
+  
   <form id="rollForm">
-    <label for="rollno">Roll Number:</label>
+    <label for="rollno">Enter Your Complete Roll Number:</label>
     <input type="text" id="rollno" name="rollno" required pattern="\d+" title="Please enter a valid roll number (digits only)" />
     <button type="submit">Get Section Info</button>
   </form>
@@ -124,7 +126,7 @@
       <p><span class="subject">${s.sub8}:</span> Section ${s.sec8}</p>
     `;
   } else {
-    resultDiv.textContent = data.message || 'Student not found.';
+    resultDiv.textContent = data.message || 'Student not found with this Roll No. (please re-enter correct Roll No.)';
   }
 })
 
