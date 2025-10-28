@@ -118,13 +118,13 @@
     resultDiv.innerHTML = `
       <p><strong>Name:</strong> ${s.name}</p>
       <p><strong>Semester:</strong> ${s.sem}</p><hr>
-      <p><span class="subject">${s.cls}:</span> Section ${s.cls}</p>
-      <p><span class="subject">${s.roll}:</span> Section ${s.rollno}</p>
-      <p><span class="subject">${s.semyear}:</span> Section ${s.semyear}</p><hr>
-      <p><span class="subject">${s.year}:</span> Section ${s.year}</p><hr>
-      <p><span class="subject">${s.contact}:</span> Section ${s.contact}</p>
-      <p><span class="subject">${s.mobile}:</span> Section ${s.mobile}</p>
-      <p><span class="subject">${s.deliv}:</span> Section ${s.deliv}</p>
+      <p><span class="subject">${s.id}:</span> Section ${s.id}</p>
+      <p><span class="subject">${s.sub1}:</span> Section ${s.sub1}</p>
+      <p><span class="subject">${s.sec1}:</span> Section ${s.sec1}</p><hr>
+      <p><span class="subject">${s.sub2}:</span> Section ${s.sub2}</p><hr>
+      <p><span class="subject">${s.sec2}:</span> Section ${s.sec2}</p>
+      <p><span class="subject">${s.sub3}:</span> Section ${s.sub3}</p>
+      <p><span class="subject">${s.sec3}:</span> Section ${s.sec3}</p>
     `;
   } else {
     resultDiv.textContent = data.message || 'Student not found with this Roll No. (please re-enter correct Roll No.)';
@@ -140,3 +140,4 @@
   
 </body>
 </html>
+
