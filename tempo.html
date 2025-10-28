@@ -109,7 +109,7 @@
     resultDiv.style.display = 'block';
     resultDiv.textContent = 'Loading...';
 
-    fetch(`${API_URL}?rollno=${encodeURIComponent(rollno)}`)
+    fetch(`${API_URL}?roll=${encodeURIComponent(rollno)}`)
       .then(response => response.json())
       .then(data => {
   if (data.found) {
@@ -140,3 +140,4 @@
   
 </body>
 </html>
+
