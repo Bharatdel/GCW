@@ -99,7 +99,7 @@
   const form = document.getElementById('rollForm');
   const resultDiv = document.getElementById('result');
   // Replace with your actual Apps Script Web App URL
-  const API_URL = 'https://script.google.com/macros/s/AKfycbzIKen4Qv6ELeMIQE2api03PrgR_30UMYQwAOjHX1UWCxe8ssNASxUvimZpHys8tIpS/exec';
+  const API_URL = 'https://script.google.com/macros/s/AKfycbxhZe_1c4WvZlTF_Vf6d2CqnfExSADqCrxe0JJjG1axz-gYNB5ijoZjOOnBEoE85FeZ/exec';
 
   form.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -119,12 +119,12 @@
       <p><strong>Name:</strong> ${s.name}</p>
       <p><strong>Semester:</strong> ${s.sem}</p><hr>
       <p><span class="subject">${s.id}:</span> Section ${s.id}</p>
-      <p><span class="subject">${s.sub1}:</span> Section ${s.sub1}</p>
-      <p><span class="subject">${s.sec1}:</span> Section ${s.sec1}</p><hr>
-      <p><span class="subject">${s.sub2}:</span> Section ${s.sub2}</p><hr>
-      <p><span class="subject">${s.sec2}:</span> Section ${s.sec2}</p>
-      <p><span class="subject">${s.sub3}:</span> Section ${s.sub3}</p>
-      <p><span class="subject">${s.sec3}:</span> Section ${s.sec3}</p>
+      <p><span class="subject">${s.sub1}:</span> Section ${s.sec1}</p>
+      <p><span class="subject">${s.sub2}:</span> Section ${s.sec2}</p><hr>
+      <p><span class="subject">${s.sub3}:</span> Section ${s.sec3}</p><hr>
+      <p><span class="subject">${s.sub4}:</span> Section ${s.sec4}</p>
+      <p><span class="subject">${s.sub5}:</span> Section ${s.sec5}</p>
+      <p><span class="subject">${s.sub6}:</span> Section ${s.sec6}</p>
     `;
   } else {
     resultDiv.textContent = data.message || 'Student not found with this Roll No. (please re-enter correct Roll No.)';
@@ -140,4 +140,5 @@
   
 </body>
 </html>
+
 
